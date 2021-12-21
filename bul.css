@@ -1,0 +1,132 @@
+table {
+	border: 1px solid black;
+	font-family: Calibri;
+	font-size: 10pt;
+}
+td {
+	height: 30px;
+	width: 30px;
+	border: 1px solid black;
+	text-align: center;
+}
+tr.castle td {
+	border: 1px solid blue;
+}
+.track {
+	border: 1px solid black;
+}
+tr.track td {
+	border: 0px solid black;
+}
+tr.track td:nth-child(3) {
+	border: 1px dashed black;
+	background-color: #EEEEEE;
+}
+.hide {
+	display: none;
+}
+.roll {
+	height: 24px;
+	width: 28px;
+	font-size: 8pt;
+	padding: 0px;
+	margin: auto;
+	float: right;
+}
+.start {
+	height: 24px;
+	/*width: 56px;*/
+	font-size: 8pt;
+	padding: 0px 4px;
+	margin: auto;
+	float: right;
+}
+.dice {
+	width: 24px;
+	height: 24px;
+	/*border: 1px solid black;
+	border-radius: 15px;*/
+	margin: auto;
+	transform-style: preserve-3D;
+}
+.token {
+	width: 24px;
+	height: 24px;
+	/*border: 1px solid #797D7F;
+	border-radius: 15px;*/
+	margin: auto;
+	cursor: pointer;
+	font-size: 6pt;
+}
+.captured {
+	/*position: absolute;*/
+	bottom: -1px;
+	width: 12px;
+	height: 12px;
+	/*border-radius: 7px;*/
+	opacity: .5 !important;
+}
+.blue {
+	/*background-color: #85C1E9;*/
+	background: url('Bul24_03.png') 0px 0px no-repeat;
+	background-size: 24px;
+}
+.red {
+	/*background-color: #F1948A;*/
+	background: url('Bul24_01.png') 0px 0px no-repeat;
+	background-size: 24px;
+}
+.black {
+	/*background-color: #777777;*/
+	background: url('Corn_Black24.png') 0px 0px no-repeat;
+	background-size: 24px;
+}
+.yellow {
+	/*background-color: yellow;*/
+	background: url('Corn_Normal24.png') 0px 0px no-repeat;
+	background-size: 24px;
+}
+td[id^='roll-'] {
+	background-color: #F6F6F6;
+}
+.player-play {
+	opacity: 1;
+}
+.player-wait {
+	opacity: .5;
+}
+.killed {
+	cursor: not-allowed;
+	display: inline-block;
+}
+.down:after {
+	content: "↓";
+}
+.up:after {
+	content: "↑";
+}
+.deg45{
+	transform: rotate(45deg);
+}
+.deg90{
+	transform: rotate(90deg);
+}
+.deg135{
+	transform: rotate(135deg);
+}
+.deg180{
+	transform: rotate(180deg);
+}
+.deg225{
+	transform: rotate(225deg);
+}
+.deg270{
+	transform: rotate(270deg);
+}
+.deg315{
+	transform: rotate(315deg);
+}
+.rotate-bul{
+	transform: rotate(270deg) translateX(-100%);
+	transform-origin: left top;
+}
